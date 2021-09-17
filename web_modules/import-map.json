@@ -7,6 +7,6 @@
     "three": "./three.js",
     "three/src/constants": "./three/src/constants.js",
     "three/examples/jsm/loaders/GLTFLoader": "./three/examples/jsm/loaders/GLTFLoader.js",
-    "three/examples/jsm/geometries/TeapotBufferGeometry": "./three/examples/jsm/geometries/TeapotBufferGeometry.js"
+    "three/examples/jsm/geometries/TeapotGeometry": "./three/examples/jsm/geometries/TeapotGeometry.js"
   }
 }
