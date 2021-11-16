@@ -1,52 +1,50 @@
-import transform from './object-transform.js';
-import renderable from './object-renderable.js';
+import transform from "./object-transform.js";
+import renderable from "./object-renderable.js";
 
 const geometry = {
-  name: 'Geometry',
-  prop: 'geometry',
-  type: 'geometry',
-}
+  name: "Geometry",
+  prop: "geometry",
+  type: "geometry",
+};
 const material = {
-  name: 'Material',
-  prop: 'material',
-  type: 'material',
-}
+  name: "Material",
+  prop: "material",
+  type: "material",
+};
 
-const object = [
-  transform,
-  renderable,
-];
+const userdata = {
+  name: "Userdata",
+  prop: "userData",
+  type: "userdata",
+};
+
+const object = [transform, renderable, userdata];
 
 const GeometryRenderable = {
-  type: 'object',
-  props: [
-    geometry,
-    material,
-    transform,
-    renderable,
-  ]
-}
+  type: "object",
+  props: [geometry, material, transform, renderable],
+};
 
 const Scene = {
-  type: 'scene',
+  type: "scene",
   props: object,
-}
+};
 
 const Helper = {
-  type: 'helper',
+  type: "helper",
   props: object,
-}
+};
 
 const Bone = {
-  type: 'bone',
+  type: "bone",
   props: object,
-}
+};
 
 // Does not have a further classification yet
 const Object3D = {
-  type: 'object',
+  type: "object",
   props: object,
-}
+};
 
 export default {
   Mesh: GeometryRenderable,
@@ -75,7 +73,7 @@ export default {
   VertexNormalsHelper: Helper,
 
   Scene: Scene,
- 
+
   Skeleton: Bone,
   Bone: Bone,
 
